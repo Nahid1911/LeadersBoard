@@ -1,4 +1,3 @@
-/* eslint-disable*/
 import _ from 'lodash';
 import './style.css';
 import {setDataToLocalStorage, displayLeaderboard} from './localStorage';
