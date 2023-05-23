@@ -1,3 +1,63 @@
-.hello {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.scoreForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.scoreForm > input {
+  margin-bottom: 10px;
+}
+
+.scoreForm > button {
+  width: 50%;
+}
+
+.leaderboard > table {
+  width: 100%;
+}
+
+.leaderboard > tr {
+  width: 100%;
+}
+
+.leaderboard > tr > td {
+  width: 100%;
+}
+
+table > tr:nth-child(even) {
+  background-color: rgb(180, 178, 176);
+}
+
+.scoreBoard {
+  width: 50%;
+}
+
+.inputFieldContainer {
+  width: 30%;
+}
+
+.leaderboard {
+  border: 2px solid black;
+}
+
+.textAndRefresh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnAll {
+  height: 25px;
 }

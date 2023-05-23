@@ -1,14 +1,28 @@
+/* eslint-disable*/
 import _ from 'lodash';
 import './style.css';
+import {setDataToLocalStorage, displayLeaderboard} from './localStorage';
 
-  function component() {
-    const element = document.createElement('div');
- 
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-   element.classList.add('hello');
- 
-    return element;
-  }
- 
-  document.body.appendChild(component());
+const leadesrData = JSON.parse(localStorage.getItem('leadersData')) || [];
+
+const submitBtn = document.getElementById('submit')
+
+submitBtn.addEventListener("click", collectFormInfo)
+
+function collectFormInfo(){
+    const nameData = document.getElementById('nameInput').value;
+    const scoreData = document.getElementById('scoreInput').value;
+    
+    let existingleadesrData = JSON.parse(localStorage.getItem('leadersData')) || [];
+    let newObject = {
+        name: nameData,
+        score: scoreData,
+    }
+    existingleadesrData.push(newObject);
+    document.getElementById('nameInput').value = '';
+    document.getElementById('scoreInput').value = '';
+    setDataToLocalStorage (existingleadesrData)
+    displayLeaderboard(existingleadesrData);
+}
+
+displayLeaderboard(leadesrData);
