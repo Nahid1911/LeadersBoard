@@ -23,19 +23,19 @@
   width: 50%;
 }
 
-.leaderboard > table {
+table {
   width: 100%;
 }
 
-.leaderboard > tr {
+.leaderboard > .tbody {
   width: 100%;
 }
 
-.leaderboard > tr > td {
+tbody > tr {
   width: 100%;
 }
 
-table > tr:nth-child(even) {
+tbody > tr:nth-child(even) {
   background-color: rgb(180, 178, 176);
 }
 
@@ -49,6 +49,7 @@ table > tr:nth-child(even) {
 
 .leaderboard {
   border: 2px solid black;
+  width: 100%;
 }
 
 .textAndRefresh {

@@ -1,27 +1,37 @@
 import _ from 'lodash';
 import './style.css';
-import {setDataToLocalStorage, displayLeaderboard} from './localStorage';
+import { saveScore, fetchScores } from './localStorage';
 
-const leadesrData = JSON.parse(localStorage.getItem('leadersData')) || [];
+const displayLeaderboard = (data) => {
+  const leadersBoard = document.getElementById('leaderboard');
+  const table = document.createElement('table')
+  leadersBoard.appendChild(table);
+  const tbody = document.createElement('tbody');
+  tbody.className = "tBody";
+  table.innerHTML = '';
 
-const submitBtn = document.getElementById('submit')
+  const scores = data.result;
 
-submitBtn.addEventListener("click", collectFormInfo)
+  scores.forEach((entry) => {
+    const row = document.createElement('tr');
+    row.innerHTML =` ${entry.user}: ${entry.score}`
+    tbody.appendChild(row);
+  });
 
-function collectFormInfo(){
-    const nameData = document.getElementById('nameInput').value;
-    const scoreData = document.getElementById('scoreInput').value;
-    
-    let existingleadesrData = JSON.parse(localStorage.getItem('leadersData')) || [];
-    let newObject = {
-        name: nameData,
-        score: scoreData,
-    }
-    existingleadesrData.push(newObject);
-    document.getElementById('nameInput').value = '';
-    document.getElementById('scoreInput').value = '';
-    setDataToLocalStorage (existingleadesrData)
-    displayLeaderboard(existingleadesrData);
-}
+  table.appendChild(tbody);
+};
 
-displayLeaderboard(leadesrData);
+document.getElementById('refreshButton').addEventListener('click', async () => {
+  const data = await fetchScores();
+  displayLeaderboard(data);
+});
+
+
+document.getElementById('submit').addEventListener('click', async () => {
+  const playerName = document.getElementById('nameInput').value;
+  const score = parseInt(document.getElementById('scoreInput').value);
+  await saveScore(playerName, score);
+  document.getElementById('nameInput').value = '';
+  document.getElementById('scoreInput').value = '';
+});
+
