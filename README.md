@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h3><b>My Portfolio README guide</b></h3>
+  <h3><b>Leaders Board Readme guide</b></h3>
 
 </div>
 
@@ -31,7 +31,7 @@
 
 # 📖 Nahid-s_Portfolio <a name="about-project"></a>
 
-Nahid-s_Portfolio is a HTML and CSS porject to develop personal portfolio wiith some mandatory features.
+This is a leaders board project, there is two input fields and one leaders board showing the list of leaders with theire ranking.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,9 +49,7 @@ Nahid-s_Portfolio is a HTML and CSS porject to develop personal portfolio wiith 
 
 ### Key Features <a name="key-features"></a>
 
-- Work Showcase
-- Personal Information
-- Contact information
+- Leaders board
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,6 +75,8 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 Install text editor like Visual Studio
+Webpack
+node.js
 
 ### Setup
 
