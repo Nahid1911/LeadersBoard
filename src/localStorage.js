@@ -1,20 +1,32 @@
-function setDataToLocalStorage (obj) {
-    localStorage.setItem('leadersData', JSON.stringify(obj))
-    
-}
+const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const gameId = 'neerCzA0Eoyfj9E1dI2J';
 
-const displayLeaderboard = (data) => {
-  const leaderboardElement = document.getElementById('leaderboard');
-  leaderboardElement.innerHTML = '';
+const fetchScores = async () => {
+  try {
+    const response = await fetch(`${apiURL}/games/${gameId}/scores`);
+    const data = await response.json();
 
-  const table = document.createElement('table');
-  data.forEach((object) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `<td>${object.name}: ${object.score}</td>`;
-    table.appendChild(row);
-  });
-
-  leaderboardElement.appendChild(table);
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching scores:', error);
+  }
 };
 
-export {setDataToLocalStorage, displayLeaderboard};
+const saveScore = async (playerName, score) => {
+  try {
+    const response = await fetch(`${apiURL}/games/${gameId}/scores`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ gameID: gameId, user: playerName, score }),
+    });
+
+    console.log('Score saved successfully!');
+  } catch (error) {
+    console.error('Error saving the score:', error);
+  }
+};
+
+export{ saveScore, fetchScores}
