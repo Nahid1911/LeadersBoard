@@ -83,6 +83,10 @@ tbody > tr {
   padding: 10px;
 }
 
+span {
+  color: #f3c37b;
+}
+
 tbody > tr:nth-child(even) {
   background-color: rgb(82, 200, 236);
 }

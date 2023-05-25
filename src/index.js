@@ -27,12 +27,14 @@ document.getElementById('refreshButton').addEventListener('click', async () => {
 });
 
 
-document.getElementById('submit').addEventListener('click', async () => {
+const submitBtn = document.getElementById('submit');
+submitBtn.addEventListener('click', async () => {
   const playerName = document.getElementById('nameInput').value;
   const score = parseInt(document.getElementById('scoreInput').value);
   await saveScore(playerName, score);
   document.getElementById('nameInput').value = '';
   document.getElementById('scoreInput').value = '';
+  submitBtn.insertAdjacentHTML("afterend", '<span>*the information has been stored successfully</span>')
 });
 
 const data = await fetchScores();
