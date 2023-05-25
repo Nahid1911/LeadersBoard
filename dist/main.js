@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\n.mainContainer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: space-around;\\r\\n}\\r\\n\\r\\n.scoreForm {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: space-around;\\r\\n}\\r\\n\\r\\n.scoreForm > input {\\r\\n  margin-bottom: 10px;\\r\\n}\\r\\n\\r\\n.scoreForm > button {\\r\\n  width: 50%;\\r\\n}\\r\\n\\r\\ntable {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.leaderboard > .tbody {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\ntbody > tr {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\ntbody > tr:nth-child(even) {\\r\\n  background-color: rgb(180, 178, 176);\\r\\n}\\r\\n\\r\\n.scoreBoard {\\r\\n  width: 50%;\\r\\n}\\r\\n\\r\\n.inputFieldContainer {\\r\\n  width: 30%;\\r\\n}\\r\\n\\r\\n.leaderboard {\\r\\n  border: 2px solid black;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.textAndRefresh {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.btnAll {\\r\\n  height: 25px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nh1 {\\r\\n  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));\\r\\n  color: #e4e5ce;\\r\\n  margin-bottom: 20px;\\r\\n  text-align: center;\\r\\n  padding: 10px 0px;\\r\\n  font-family:Georgia, 'Times New Roman', Times, serif;\\r\\n  letter-spacing: 1px;\\r\\n}\\r\\n\\r\\nh1:hover {\\r\\n  color: rgb(175, 230, 93)\\r\\n}\\r\\n\\r\\n.mainContainer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: space-around;\\r\\n}\\r\\n\\r\\n.scoreForm {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: space-around;\\r\\n  background-color: rgb(14 38 99);\\r\\n  padding: 10px;\\r\\n  border-radius: 10px;\\r\\n}\\r\\n\\r\\n.scoreForm > input {\\r\\n  margin-bottom: 10px;\\r\\n  height: 30px;\\r\\n  padding: 10px;\\r\\n  border-radius: 10px;\\r\\n  outline: none;\\r\\n}\\r\\n\\r\\n.scoreForm > button {\\r\\n  width: 100px;\\r\\n}\\r\\n\\r\\ntable {\\r\\n  width: 100%;\\r\\n  padding: 5px;\\r\\n  background-color: rgb(14 38 99);\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: center;\\r\\n  border-radius: 10px;\\r\\n}\\r\\n\\r\\n.leaderboard > .tbody {\\r\\n  width: 100%;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\ntbody > tr {\\r\\n  width: 100%;\\r\\n  height: 30px;\\r\\n  padding: 8px;\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  margin: 8px 0px;\\r\\n  background-color: rgb(150 228 240);\\r\\n  border-radius: 8px;\\r\\n  color: #2a2aa5;\\r\\n  font-weight: 700;\\r\\n}\\r\\n\\r\\n.inputFieldContainer > h2 {\\r\\n  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));\\r\\n  color: #fff;\\r\\n  margin-bottom: 10px;\\r\\n  border-radius: 10px;\\r\\n  padding: 10px;\\r\\n}\\r\\n\\r\\ntbody > tr:nth-child(even) {\\r\\n  background-color: rgb(82, 200, 236);\\r\\n}\\r\\n\\r\\ntbody > tr:hover {\\r\\n  background: linear-gradient(rgb(7, 142, 163), #a3eaa3, rgb(7, 142, 163));\\r\\n  color: #065c1d;\\r\\n  box-shadow: 0px 5px 10px;\\r\\n}\\r\\n\\r\\n.scoreBoard {\\r\\n  width: 50%;\\r\\n}\\r\\n\\r\\n.inputFieldContainer {\\r\\n  width: 30%;\\r\\n}\\r\\n\\r\\n.leaderboard {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.textAndRefresh {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));\\r\\n  color: #fff;\\r\\n  border-radius: 10px;\\r\\n  padding: 10px;\\r\\n  margin-bottom: 10px;\\r\\n}\\r\\n\\r\\n.btnAll {\\r\\n  height: 25px;\\r\\n  width: 100px;\\r\\n  border-radius: 5px;\\r\\n  background: linear-gradient(rgb(37, 86, 211), #8a98cd, rgb(37, 86, 211));\\r\\n  color: #e4e5ce;\\r\\n}\\r\\n\\r\\n.btnAll:hover {\\r\\n  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));\\r\\n  height: 25px;\\r\\n  color: rgb(102, 225, 149);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -133,10 +133,10 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _localStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./localStorage */ \"./src/localStorage.js\");\n\r\n\r\n\r\n\r\nconst displayLeaderboard = (data) => {\r\n  const leadersBoard = document.getElementById('leaderboard');\r\n  const table = document.createElement('table')\r\n  leadersBoard.appendChild(table);\r\n  const tbody = document.createElement('tbody');\r\n  tbody.className = \"tBody\";\r\n  table.innerHTML = '';\r\n\r\n  const scores = data.result;\r\n\r\n  scores.forEach((entry) => {\r\n    const row = document.createElement('tr');\r\n    row.innerHTML =` ${entry.user}: ${entry.score}`\r\n    tbody.appendChild(row);\r\n  });\r\n\r\n  table.appendChild(tbody);\r\n};\r\n\r\ndocument.getElementById('refreshButton').addEventListener('click', async () => {\r\n  const data = await (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.fetchScores)();\r\n  displayLeaderboard(data);\r\n});\r\n\r\n\r\ndocument.getElementById('submit').addEventListener('click', async () => {\r\n  const playerName = document.getElementById('nameInput').value;\r\n  const score = parseInt(document.getElementById('scoreInput').value);\r\n  await (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.saveScore)(playerName, score);\r\n  document.getElementById('nameInput').value = '';\r\n  document.getElementById('scoreInput').value = '';\r\n});\r\n\r\n\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/index.js?");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _localStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./localStorage */ \"./src/localStorage.js\");\n\r\n\r\n\r\n\r\nconst displayLeaderboard = (data) => {\r\n  const leadersBoard = document.getElementById('leaderboard');\r\n  leadersBoard.innerHTML = '';\r\n  const table = document.createElement('table')\r\n  const tbody = document.createElement('tbody');\r\n  tbody.className = \"tBody\";\r\n\r\n  const scores = data.result;\r\n\r\n  scores.forEach((entry) => {\r\n    const row = document.createElement('tr');\r\n    row.innerHTML =` ${entry.user}: ${entry.score}`\r\n    tbody.appendChild(row);\r\n  });\r\n  \r\n  leadersBoard.appendChild(table);\r\n  table.appendChild(tbody);\r\n};\r\n\r\ndocument.getElementById('refreshButton').addEventListener('click', async () => {\r\n  const data = await (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.fetchScores)();\r\n  displayLeaderboard(data);\r\n});\r\n\r\n\r\ndocument.getElementById('submit').addEventListener('click', async () => {\r\n  const playerName = document.getElementById('nameInput').value;\r\n  const score = parseInt(document.getElementById('scoreInput').value);\r\n  await (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.saveScore)(playerName, score);\r\n  document.getElementById('nameInput').value = '';\r\n  document.getElementById('scoreInput').value = '';\r\n});\r\n\r\nconst data = await (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.fetchScores)();\r\ndisplayLeaderboard(data);\r\n\r\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } }, 1);\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/index.js?");
 
 /***/ }),
 
@@ -147,7 +147,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   fetchScores: () => (/* binding */ fetchScores),\n/* harmony export */   saveScore: () => (/* binding */ saveScore)\n/* harmony export */ });\nconst apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';\r\nconst gameId = 'neerCzA0Eoyfj9E1dI2J';\r\n\r\nconst fetchScores = async () => {\r\n  try {\r\n    const response = await fetch(`${apiURL}/games/${gameId}/scores`);\r\n    const data = await response.json();\r\n\r\n    console.log(data);\r\n    return data;\r\n  } catch (error) {\r\n    console.error('Error fetching scores:', error);\r\n  }\r\n};\r\n\r\nconst saveScore = async (playerName, score) => {\r\n  try {\r\n    const response = await fetch(`${apiURL}/games/${gameId}/scores`, {\r\n      method: 'POST',\r\n      headers: {\r\n        'Content-Type': 'application/json',\r\n      },\r\n      body: JSON.stringify({ gameID: gameId, user: playerName, score }),\r\n    });\r\n\r\n    console.log('Score saved successfully!');\r\n  } catch (error) {\r\n    console.error('Error saving the score:', error);\r\n  }\r\n};\r\n\r\n\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/localStorage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   fetchScores: () => (/* binding */ fetchScores),\n/* harmony export */   saveScore: () => (/* binding */ saveScore)\n/* harmony export */ });\nconst apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';\r\nconst gameId = 'neerCzA0Eoyfj9E1dI2J';\r\n\r\nconst fetchScores = async () => {\r\n  try {\r\n    const response = await fetch(`${apiURL}/games/${gameId}/scores`);\r\n    const data = await response.json();\r\n    return data;\r\n  } catch (error) {\r\n    console.error('Error fetching scores:', error);\r\n  }\r\n};\r\n\r\nconst saveScore = async (playerName, score) => {\r\n  try {\r\n    const response = await fetch(`${apiURL}/games/${gameId}/scores`, {\r\n      method: 'POST',\r\n      headers: {\r\n        'Content-Type': 'application/json',\r\n      },\r\n      body: JSON.stringify({ gameID: gameId, user: playerName, score }),\r\n    });\r\n\r\n    console.log('Score saved successfully!');\r\n  } catch (error) {\r\n    console.error('Error saving the score:', error);\r\n  }\r\n};\r\n\r\n\n\n//# sourceURL=webpack://nahid-s_portfolio/./src/localStorage.js?");
 
 /***/ })
 
@@ -181,6 +181,75 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/async module */
+/******/ 	(() => {
+/******/ 		var webpackQueues = typeof Symbol === "function" ? Symbol("webpack queues") : "__webpack_queues__";
+/******/ 		var webpackExports = typeof Symbol === "function" ? Symbol("webpack exports") : "__webpack_exports__";
+/******/ 		var webpackError = typeof Symbol === "function" ? Symbol("webpack error") : "__webpack_error__";
+/******/ 		var resolveQueue = (queue) => {
+/******/ 			if(queue && !queue.d) {
+/******/ 				queue.d = 1;
+/******/ 				queue.forEach((fn) => (fn.r--));
+/******/ 				queue.forEach((fn) => (fn.r-- ? fn.r++ : fn()));
+/******/ 			}
+/******/ 		}
+/******/ 		var wrapDeps = (deps) => (deps.map((dep) => {
+/******/ 			if(dep !== null && typeof dep === "object") {
+/******/ 				if(dep[webpackQueues]) return dep;
+/******/ 				if(dep.then) {
+/******/ 					var queue = [];
+/******/ 					queue.d = 0;
+/******/ 					dep.then((r) => {
+/******/ 						obj[webpackExports] = r;
+/******/ 						resolveQueue(queue);
+/******/ 					}, (e) => {
+/******/ 						obj[webpackError] = e;
+/******/ 						resolveQueue(queue);
+/******/ 					});
+/******/ 					var obj = {};
+/******/ 					obj[webpackQueues] = (fn) => (fn(queue));
+/******/ 					return obj;
+/******/ 				}
+/******/ 			}
+/******/ 			var ret = {};
+/******/ 			ret[webpackQueues] = x => {};
+/******/ 			ret[webpackExports] = dep;
+/******/ 			return ret;
+/******/ 		}));
+/******/ 		__webpack_require__.a = (module, body, hasAwait) => {
+/******/ 			var queue;
+/******/ 			hasAwait && ((queue = []).d = 1);
+/******/ 			var depQueues = new Set();
+/******/ 			var exports = module.exports;
+/******/ 			var currentDeps;
+/******/ 			var outerResolve;
+/******/ 			var reject;
+/******/ 			var promise = new Promise((resolve, rej) => {
+/******/ 				reject = rej;
+/******/ 				outerResolve = resolve;
+/******/ 			});
+/******/ 			promise[webpackExports] = exports;
+/******/ 			promise[webpackQueues] = (fn) => (queue && fn(queue), depQueues.forEach(fn), promise["catch"](x => {}));
+/******/ 			module.exports = promise;
+/******/ 			body((deps) => {
+/******/ 				currentDeps = wrapDeps(deps);
+/******/ 				var fn;
+/******/ 				var getResult = () => (currentDeps.map((d) => {
+/******/ 					if(d[webpackError]) throw d[webpackError];
+/******/ 					return d[webpackExports];
+/******/ 				}))
+/******/ 				var promise = new Promise((resolve) => {
+/******/ 					fn = () => (resolve(getResult));
+/******/ 					fn.r = 0;
+/******/ 					var fnQueue = (q) => (q !== queue && !depQueues.has(q) && (depQueues.add(q), q && !q.d && (fn.r++, q.push(fn))));
+/******/ 					currentDeps.map((dep) => (dep[webpackQueues](fnQueue)));
+/******/ 				});
+/******/ 				return fn.r ? promise : getResult();
+/******/ 			}, (err) => ((err ? reject(promise[webpackError] = err) : outerResolve(exports)), resolveQueue(queue)));
+/******/ 			queue && (queue.d = 0);
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
