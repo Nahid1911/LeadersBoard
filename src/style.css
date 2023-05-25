@@ -1,6 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));
+  color: #e4e5ce;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
+h1:hover {
+  color: rgb(175, 230, 93);
 }
 
 .mainContainer {
@@ -13,30 +28,73 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: rgb(14 38 99);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .scoreForm > input {
   margin-bottom: 10px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
 }
 
 .scoreForm > button {
-  width: 50%;
+  width: 100px;
 }
 
 table {
   width: 100%;
+  padding: 5px;
+  background-color: rgb(14 38 99);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .leaderboard > .tbody {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 tbody > tr {
   width: 100%;
+  height: 30px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  background-color: rgb(150 228 240);
+  border-radius: 8px;
+  color: #2a2aa5;
+  font-weight: 700;
+}
+
+.inputFieldContainer > h2 {
+  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+span {
+  color: #f3c37b;
 }
 
 tbody > tr:nth-child(even) {
-  background-color: rgb(180, 178, 176);
+  background-color: rgb(82, 200, 236);
+}
+
+tbody > tr:hover {
+  background: linear-gradient(rgb(7, 142, 163), #a3eaa3, rgb(7, 142, 163));
+  color: #065c1d;
+  box-shadow: 0 5px 10px;
 }
 
 .scoreBoard {
@@ -48,7 +106,6 @@ tbody > tr:nth-child(even) {
 }
 
 .leaderboard {
-  border: 2px solid black;
   width: 100%;
 }
 
@@ -57,8 +114,23 @@ tbody > tr:nth-child(even) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .btnAll {
   height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  background: linear-gradient(rgb(37, 86, 211), #8a98cd, rgb(37, 86, 211));
+  color: #e4e5ce;
+}
+
+.btnAll:hover {
+  background: linear-gradient(rgb(14 38 99), #8a98cd, rgb(14 38 99));
+  height: 25px;
+  color: rgb(102, 225, 149);
 }

@@ -4,11 +4,10 @@ import { saveScore, fetchScores } from './localStorage';
 
 const displayLeaderboard = (data) => {
   const leadersBoard = document.getElementById('leaderboard');
+  leadersBoard.innerHTML = '';
   const table = document.createElement('table')
-  leadersBoard.appendChild(table);
   const tbody = document.createElement('tbody');
   tbody.className = "tBody";
-  table.innerHTML = '';
 
   const scores = data.result;
 
@@ -17,7 +16,8 @@ const displayLeaderboard = (data) => {
     row.innerHTML =` ${entry.user}: ${entry.score}`
     tbody.appendChild(row);
   });
-
+  
+  leadersBoard.appendChild(table);
   table.appendChild(tbody);
 };
 
@@ -27,11 +27,16 @@ document.getElementById('refreshButton').addEventListener('click', async () => {
 });
 
 
-document.getElementById('submit').addEventListener('click', async () => {
+const submitBtn = document.getElementById('submit');
+submitBtn.addEventListener('click', async () => {
   const playerName = document.getElementById('nameInput').value;
   const score = parseInt(document.getElementById('scoreInput').value);
   await saveScore(playerName, score);
   document.getElementById('nameInput').value = '';
   document.getElementById('scoreInput').value = '';
+  submitBtn.insertAdjacentHTML("afterend", '<span>*the information has been stored successfully</span>')
 });
+
+const data = await fetchScores();
+displayLeaderboard(data);
 
